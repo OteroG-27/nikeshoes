@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.containerMovil{
+    display: none;
+}
+body{
+    font-family: 'Work Sans';
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.containerDesktop{
+    height: 100vh;
+    font-size: 30px;
+}
+.d-grid-center{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 375px) {
+    .containerDesktop{
+        display: none;
+    }
+    .containerMovil{
+        display: block;
+        height: 100vh;
+    }
+    .d-flex-between{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn{
+        width: max-content;
+        height: 34px;
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid rgba(55, 73, 87, 0.2);
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    .btn:hover{
+        border: 2px solid black;
+    }
+    .numberOfProducts{
+        width: 15px;
+        height: 15px;
+        right: 44px;
+        top: 9px;
+        position: absolute;
+        border-radius: 21px;
+        background: black;
+        color: white;
+        font-size: 8px;
+        
+    }
+    .containerTitle{
+        height: 10vh;
+    }
+    .containerFloors{
+        height: 50vh;
+    }
+    .container-Nike{
+        height: 50vh;
+        /* position: relative; */
+    }
+    .containerSize{
+        width: 25%;
+        height: 50vh;
+        display: grid;
+        align-content: space-between;
+    }
+    .size{
+        display: grid;
+        gap: 10px;
+    }
+    .save{
+        width: 20%;
+        height: 37vh;
+        display: grid;
+        justify-content: center;
+    }
+    .btn-save{
+        padding: 9px;
+        border-radius: 13px;
+    }
+    .priceYOffer{
+        text-align: center;
+    }
+    .price{
+        display: flex;
+        font-weight: bold;
+        align-items: baseline;
+    }
+    .offer{
+        font-weight: bold;
+        font-size: 11.8621px;
+        line-height: 14px;
+        color: #BE3032;
+    }
+    .containerBoxNike{
+        height: 40vh;
+        position: relative;
+        display: grid;
+        justify-items: center;
+    }
+    .box-black{
+        width: 42px;
+        height: 92px;
+        background: #000000;
+        border-radius: 20px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        position: static;
+        z-index: 222;
+        /* padding: 11px 0 11px 0; */
+    }
+    .chevron-down{
+        display: grid;
+        align-content: baseline;
+    }
+    .imgPisosNike{
+        position: relative;
+        top: 250px;
+        opacity: 0;
+        animation: salida-imagen-zapatos 20s ease-out forwards;
+        z-index: 222;
+    }
+    .imgNike{
+        position: absolute;
+        top: 43px;
+        left: 35px;
+        opacity: 0;
+        animation: salida-imagenD 7s ease-out forwards;
+        z-index: 111;
+    }
+    .boxNike{
+        position: absolute;
+        left: 17px;
+        top: 254px;
+        opacity: 0;
+        animation: salida-imagen 2s ease-out forwards;
+    }
+    @keyframes salida-imagen{
+        to {
+            opacity: 1;
+            transform: translateY(-100%);
+          }
+    }
+    @keyframes salida-imagenD {
+        to {
+            opacity: 1;
+            transform: translateY(-100%);
+        }
+    }
+    @keyframes salida-imagen-zapatos{
+        to {
+            opacity: 1;
+            transform: translateY(-100%);
+        }
+    }
+
+}
