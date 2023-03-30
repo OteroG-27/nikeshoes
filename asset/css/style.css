@@ -19,7 +19,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
     .containerDesktop{
         display: none;
     }
@@ -60,10 +60,11 @@ body{
         height: 10vh;
     }
     .containerFloors{
-        height: 50vh;
+        height: 55vh;
     }
     .container-Nike{
         height: 50vh;
+        text-align: center;
         /* position: relative; */
     }
     .containerSize{
@@ -101,7 +102,7 @@ body{
         color: #BE3032;
     }
     .containerBoxNike{
-        height: 40vh;
+        height: 35vh;
         position: relative;
         display: grid;
         justify-items: center;
@@ -122,25 +123,29 @@ body{
         display: grid;
         align-content: baseline;
     }
+    .pisosNike{
+        position: relative;
+        top: 35px;
+    }
     .imgPisosNike{
         position: relative;
         top: 250px;
         opacity: 0;
-        animation: salida-imagen-zapatos 20s ease-out forwards;
+        animation: salida-imagen-zapatos 10s ease-out forwards;
         z-index: 222;
     }
     .imgNike{
         position: absolute;
-        top: 43px;
-        left: 35px;
+        top: 72px;
+        left: 55px;
         opacity: 0;
         animation: salida-imagenD 7s ease-out forwards;
         z-index: 111;
     }
     .boxNike{
         position: absolute;
-        left: 17px;
-        top: 254px;
+        /* left: 17px; */
+        top: 98px;
         opacity: 0;
         animation: salida-imagen 2s ease-out forwards;
     }
@@ -157,6 +162,9 @@ body{
         }
     }
     @keyframes salida-imagen-zapatos{
+        from {
+            bottom: 0px;
+        }
         to {
             opacity: 1;
             transform: translateY(-100%);
